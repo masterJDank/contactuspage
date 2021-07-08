@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: regular;
+}
+
+
+
+@font-face {
+    font-family:regular;
+    src: url(fonts/RobotoCondensed-Light.ttf);
+}
+@font-face {
+    font-family: boldone;
+    src: url(RobotoCondensed-Regular.ttf);
+}
+.contact-div{
+    max-width: 100vw;
+    height: 100vh;
+    padding: 5% 10%;
+    background-image: url(pexels-fauxels-3184460.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+.contact-container{
+    
+    min-height: 500px;
+    display: flex;
+    box-shadow: 1px 1px 10px black;
+   
+    flex-wrap: wrap;
+   
+
+}
+
+.form{
+    flex: 1 1 60%;
+    padding: 2vw 1vw ;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    border-bottom: 1px solid grey;
+    background-color: rgba(255, 247, 247,0.3);
+    
+}
+
+::placeholder{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.form h1{
+    text-align: left;
+    margin: 1vw 0;
+    width: 100%;
+    color: rgb(0, 0, 0);
+}
+.form input{
+    padding: 1vw;
+    outline: none;
+    background-color: rgba(148, 145, 145, 0.7);
+    border: none;
+    color: white;
+    font-weight: bold;
+   
+}
+.form textarea{
+    outline: none;
+    background-color: rgba(148, 145, 145, 0.7);
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+.form_in{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    height: fit-content;
+    /* border: 1px solid black; */
+   
+   
+   
+
+}
+#name{
+   flex:0 1 calc(50% - .5vw);
+
+}
+
+#email{
+    flex:0 1 calc(50% - .5vw);
+}
+
+#subject{
+    flex: 0 1 100%;
+}
+
+#message{
+    flex:1 1 100% ;
+}
+#form-button{
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: royalblue;
+    padding: 1vw 1vw;
+    outline: none;
+    border-radius: 10px;
+    
+
+}
+.details{
+    flex:1 1 40% ;   
+    /* border: 1px solid black;  */
+    background-image:linear-gradient(to right bottom,rgb(69, 69, 252),rgb(116, 140, 248)) ;
+    min-width: 300px;
+    color: white;
+    padding: 2vw 1vw 0;
+    
+}
+#details-title{
+    color: white;
+    text-align:left;
+    padding: 1vw;
+
+}
+
+
+.details  img{
+    height:calc(10px + .5vw);
+    width: 30px;
+    
+}
+.details-in{
+    padding: 1vw 2vw;
+    font-size: calc(10px + .5vw);
+}
+
+.details-in p{
+    margin: 1vw 0;
+}
